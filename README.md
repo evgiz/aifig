@@ -148,9 +148,9 @@ my_figure.save_pdf("my_figure.pdf")
 # ===================== #
 #         Graph         #
 # ===================== #
-# 	name		(required)
-# 	elements	[list of elements]
-# 	spacing		(between elements, default 32)
+# 	name			(required)
+# 	elements		[list of elements]
+# 	spacing			(between elements, default 32)
 
 my_graph = aifig.graph("graph_name")
 my_graph.add(element)
