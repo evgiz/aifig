@@ -7,7 +7,7 @@ AIFIG is a python library for generating figures of machine learning models.
 
 The libary allows you to generate figures such as the following, which may be useful for use in presentations, papers etc.
 
-<img src="img/fig_gan.png">
+<img src="https://github.com/evgiz/aifig/img/fig_gan.png">
 
 **AIFIG** is a refactored version of some of my personal code. Functionality will naturally be limited and not suited for every use. I encourage anyone who is interested to contribute with additional features.
 
@@ -22,6 +22,18 @@ If you use AIFIG in a paper, you can cite the library like this (bibtex):
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/evgiz/aifig}}
 }
+```
+
+## Install
+
+AI-FIG library with svg export:
+```bash
+pip install aifig
+```
+
+If you need to export as png or pdf:
+```bash
+pip install svglib
 ```
 
 ## Usage
@@ -57,7 +69,7 @@ my_figure.save_pdf("my_figure.pdf")
 
 *The above code generates this figure:*
 
-<img src="img/fig_simple.png">
+<img src="https://github.com/evgiz/aifig/img/fig_simple.png">
 
 #### Multi-graph example (GAN model)
 
@@ -108,7 +120,7 @@ figure.save_png("gan.png")
 
 *This code generates the following figure:*
 
-<img src="img/fig_gan.png">
+<img src="https://github.com/evgiz/aifig/img/fig_gan.png">
 
 ## API
 

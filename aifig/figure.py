@@ -1,6 +1,6 @@
 
 import svgwrite
-import draw
+from aifig import draw
 
 
 class Figure:
@@ -80,7 +80,7 @@ class Figure:
                     continue
 
                 draw.begin(self._figure)
-                gw = graph.draw(debug)
+                gw = graph._draw(debug)
 
                 # Calculate translation
                 x_translate = self._PADDING + self._H_SPACING * x
@@ -190,7 +190,14 @@ class Figure:
         self._figure.filename = self.filename
 
         import os
-        from svglib.svglib import svg2rlg
+
+        try:
+            from svglib.svglib import svg2rlg
+        except:
+            print("Error: svglib not found (required for {} export)".format(format))
+            print("try 'pip install svglib'")
+            os.remove("._tmp_model_fig.svg")
+            return
 
         drawing = svg2rlg("._tmp_model_fig.svg")
         drawing.scale(scale, scale)

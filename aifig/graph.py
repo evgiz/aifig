@@ -1,5 +1,4 @@
-import draw
-import element
+from aifig import element, draw
 
 
 class Graph:

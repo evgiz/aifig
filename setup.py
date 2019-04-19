@@ -5,18 +5,17 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='aifig',
-     version='0.1',
-     scripts=['example'],
+     version='0.1.4',
      author="Sigve Rokenes",
      author_email="me@evgiz.net",
-     description="A machine learning figure generator script",
+     description="A machine learning figure generation library",
      long_description=long_description,
      long_description_content_type="text/markdown",
      url="https://github.com/evgiz/aifig",
-     packages=setuptools.find_packages(),
+     packages=["aifig"],
      classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",
-         "Operating System :: OS Independent",
+         "Operating System :: OS Independent"
      ],
  )

@@ -1,4 +1,4 @@
-import draw
+from aifig import draw
 
 
 class Element:
