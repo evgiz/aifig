@@ -164,8 +164,8 @@ my_graph.add(element)
 #	size_label		set to False to hide size label
 #	simple			(dense only) set True to render as simple rectangle
 
-dense = aifig.dense() 	# Dense (fully connected)
-conv  = aifig.conv() 	# Convolutional layer
+dense = aifig.dense()		# Dense (fully connected)
+conv  = aifig.conv()		# Convolutional layer
 
 # ===================== #
 #    Simple elements    #
@@ -175,7 +175,7 @@ conv  = aifig.conv() 	# Convolutional layer
 
 pool  = aifig.pool()		# Pooling layer
 image = aifig.image()		# Image (usually input)
-arrow = aifig.arrow()	# Arrow
+arrow = aifig.arrow()		# Arrow
 
 # ===================== #
 #    Special elements   #
