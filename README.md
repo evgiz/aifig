@@ -123,18 +123,18 @@ A figure consists of one or more graphs. These graphs are placed in a grid using
 my_figure = aifig.figure()
 
 # figure.add
-#  graph		  graph to add
-#  x					x position in grid
-#  y					y position in grid
+#  graph			graph to add
+#  x				x position in grid
+#  y				y position in grid
 my_figure.add(graph, 0, 0)
 
 # figure.connect
 #  from				name of first graph
-#  to					name of second graph
-#  position		grid position of arrow, use this if 
-#							different arrows overlap
+#  to				name of second graph
+#  position			grid position of arrow, use this if 
+#				different arrows overlap
 #  offset			arrow offset in units, useful to
-#							distinguish different arrows at same position
+#				distinguish different arrows at same position
 my_figure.connect("graph1", "graph2")
 
 # figure.save (path)
@@ -148,8 +148,8 @@ my_figure.save_pdf("my_figure.pdf")
 # ===================== #
 #         Graph         #
 # ===================== #
-# 	name 			(required)
-# 	elements 	[list of elements]
+# 	name		(required)
+# 	elements	[list of elements]
 # 	spacing		(between elements, default 32)
 
 my_graph = aifig.graph("graph_name")
@@ -158,29 +158,29 @@ my_graph.add(element)
 # ===================== #
 #    Layer elements     #
 # ===================== #
-# 	label				text label, use None to hide
-# 	size				size of layer (nodes, filters)
-#		comment			additional comment text
-#		size_label	set to False to hide size label
-#		simple			(dense only) set True to render as simple rectangle
+# 	label			text label, use None to hide
+# 	size			size of layer (nodes, filters)
+#	comment			additional comment text
+#	size_label		set to False to hide size label
+#	simple			(dense only) set True to render as simple rectangle
 
 dense = aifig.dense() 	# Dense (fully connected)
-conv  = aifig.conv() 		# Convolutional layer
+conv  = aifig.conv() 	# Convolutional layer
 
 # ===================== #
 #    Simple elements    #
 # ===================== #
-# 	label				text label, use None to hide
-#		comment			additional comment text
+#	label			text label, use None to hide
+#	comment			additional comment text
 
 pool  = aifig.pool()		# Pooling layer
 image = aifig.image()		# Image (usually input)
-arrow = aifig.arrow() 	# Arrow
+arrow = aifig.arrow()	# Arrow
 
 # ===================== #
 #    Special elements   #
 # ===================== #
-# 	width				width of padding (use negative to reduce)
+# 	width			width of padding (use negative to reduce)
 
 padding = aifig.padding(10) 
 ```
