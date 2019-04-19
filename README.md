@@ -112,7 +112,7 @@ figure.save_png("gan.png")
 
 ## API
 
-A figure consists of one or more graphs. These graphs are placed in a grid running `figure.add(graph, x, y)`. You can add elements to graphs using `mygraph.add(element)`, and tou can connect graphs by arrows using `figure.connect("graph_name1", "graph_name2")`.  Finally, to save a figure, use `my_figure.save_svg("fig.svg")` or variants for different formats.
+A figure consists of one or more graphs. These graphs are placed in a grid using `figure.add(graph, x, y)`. You can add elements to graphs using `mygraph.add(element)`, and you can connect graphs with arrows using `figure.connect("graph_name1", "graph_name2")`.  Finally, to save a figure, use `my_figure.save_svg("fig.svg")` or variants for different formats.
 
 ```python
 # ===================== #
