@@ -11,19 +11,6 @@ The libary allows you to generate figures such as the following, which may be us
 
 **AIFIG** is a refactored version of some of my personal code. Functionality will naturally be limited and not suited for every use. I encourage anyone who is interested to contribute with additional features.
 
-If you use AIFIG in a paper, you can cite the library like this (bibtex):
-
-```latex
-@misc{aifig,
-  author = {Sigve Rokenes},
-  title = {AI-FIG},
-  year = {2019},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/evgiz/aifig}}
-}
-```
-
 ## Install
 
 AI-FIG library with svg export:
@@ -197,7 +184,20 @@ arrow = aifig.arrow()		# Arrow
 padding = aifig.padding(10) 
 ```
 
+### Cite
 
+If you use AIFIG in a paper, you can cite the library like this if you want:
+
+```latex
+@misc{aifig,
+  author = {Sigve Rokenes},
+  title = {AI-FIG},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/evgiz/aifig}}
+}
+```
 
 ### Dependencies
 
